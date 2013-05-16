@@ -1,0 +1,46 @@
+# Configs
+
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config windowHintsSpread true
+config windowHintsOrder persist
+
+# Misc aliases
+
+alias browser 'Safari'
+alias editor 'MacVim'
+
+# Abstract positions
+
+alias full      move screenOriginX;screenOriginY                screenSizeX;screenSizeY
+alias lefthalf  move screenOriginX;screenOriginY                screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY  screenSizeX/2;screenSizeY
+
+alias hyper ctrl;shift;alt;cmd
+
+# Resize Bindings
+
+bind h:${hyper} ${lefthalf}
+bind l:${hyper} ${righthalf}
+bind k:${hyper} ${full}
+bind j:${hyper} hide current
+
+# App bindings
+
+bind b:${hyper} focus ${browser}
+bind v:${hyper} focus ${editor}
+bind x:${hyper} focus 'Xcode'
+bind t:${hyper} focus 'iTerm'
+bind i:${hyper} focus 'iTunes'
+bind w:${hyper} focus 'Tweetbot'
+bind r:${hyper} focus 'Rdio'
+bind s:${hyper} focus 'Steam'
+bind m:${hyper} focus 'Messages'
+bind n:${hyper} focus 'nvALT'
+
+# Window Hints
+
+bind e:${hyper} hint ASDFGHJKLQWERTYUIOOPZXCVBNM

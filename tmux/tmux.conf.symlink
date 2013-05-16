@@ -1,0 +1,38 @@
+# fix copy and paste on osx
+set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+# tell the terminal we can handle 256 colours
+set -g default-terminal "screen-256color"
+
+# Rebind prefix
+unbind C-b
+set -g prefix C-a
+bind C-a send-prefix
+
+# Vim-style navigation
+setw -g mode-keys vi
+unbind-key j
+bind-key j select-pane -D
+unbind-key k
+bind-key k select-pane -U
+unbind-key h
+bind-key h select-pane -L
+unbind-key l
+bind-key l select-pane -R
+
+# 0 is at the wrong end of the keyboard
+set -g base-index 1
+
+# Enable the mouse
+set-option -g mouse-select-pane on
+set-option -g mouse-select-window on
+set-option -g mouse-resize-pane on
+
+# scroll into copy mode and select text for copying with the mouse
+setw -g mode-mouse on
+
+# Remember more things!
+set -g history-limit 1000000
+
+# Enable Powerline
+source '/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf'
