@@ -1,3 +1,141 @@
 set nocompatible
 
+" Vundle manages our plugins
 source $ZSH/vim/vundle.vimrc
+
+let mapleader=","		" change the leader key
+nnoremap ; :
+
+"========================================
+" Moving Around, Searching, and Patterns
+"========================================
+
+set nostartofline 		" keep the cursor in the same position for long-range motion commands
+set incsearch			" highlight pattern matches as you type
+set ignorecase			" ignore case when searching
+set smartcase			" override ignorecase when search pattern has an uppercase character
+set backspace=indent,eol,start	" backspace through everything in insert mode
+" fix vim's default regex behaviour
+nnoremap / /\v
+vnoremap / /\v
+" make j and k navigate up and down by line-on-screen rather than line-in-file
+nnoremap j gj
+nnoremap k gk
+
+"========================================
+" Displaying Text
+"========================================
+
+set scrolloff=5			" number of screen lines to show around the cursor
+set sidescrolloff=2		" does the same, but for the sides of the screen
+set relativenumber		" show relative line numbers
+set linebreak			" for lines longer than the window, wrap. This doesn't insert hard line breaks
+set showbreak=↪\ \ 		" string to put before wrapped lines
+
+"========================================
+" Syntax, Highlighting and Spelling
+"========================================
+
+syntax enable
+
+"========================================
+" Multiple Windows
+"========================================
+
+set laststatus=2		" Always show the status line
+" Make ,w open a new vsplit then switch to it
+nnoremap <leader>w <C-w>v<C-w>l
+" " map C-[hjkl] to switch split windows
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+"========================================
+" Terminal
+"========================================
+
+set ttyfast			" speed things up
+
+"========================================
+" Messages and Info
+"========================================
+
+set showcmd			" In the status bar, show incomplete commands as they are typed
+set noshowmode			" powerline already displays this, we don't need it again
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+set ruler			" always show cursor position
+set cursorline			" highlight the line the cursor is on
+
+"========================================
+" Selecting Text
+"========================================
+
+set clipboard=unnamed		" Yank to the system clipboard by default
+" preserve indentation when pasting from the osx clipboard
+noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
+
+"========================================
+" Editing Text
+"========================================
+
+set showmatch			" show matching brackets
+
+"========================================
+" Tabs and Indenting
+"========================================
+
+set tabstop=4                   " a tab is four spaces 
+set shiftwidth=4                " autoindent is four spaces 
+set softtabstop=4
+set expandtab                   " use spaces, not tabs
+set smartindent                 " autoindenting
+
+"========================================
+" Folding
+"========================================
+
+set foldmethod=indent           " fold based on indent
+set foldnestmax=10              " deepest fold is 10 levels
+set nofoldenable                " don't fold by default
+set foldlevel=1                 " not sure exactly what this does but apparently its necessary
+
+"========================================
+" Reading and Writing Files
+"========================================
+
+set autoread			" Automatically reread files changed outside of vim
+
+"========================================
+" Command Line Editing
+"========================================
+
+set wildmode=list:longest,full
+
+" File tab completion ignores these file patterns
+set wildignore+=*.exe,*.swp,.DS_Store
+set wildmenu
+
+"========================================
+" Multi-byte Characters
+"========================================
+
+set encoding=utf-8
+
+
+"========================================
+" System-Specific
+"========================================
+if has("gui_macvim")
+	set macmeta
+	inoremap <m-3> #
+endif	
+
+
+"========================================
+" Plugins
+"========================================
+
+" map ,s to switch between header and implementation files with a.vim
+map <leader>s :A<cr>
+highlight clear SignColumn
