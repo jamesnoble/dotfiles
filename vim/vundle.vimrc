@@ -10,5 +10,6 @@ Bundle 'wincent/Command-T'
 Bundle 'vim-scripts/a.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/vitality.vim'
+Bundle 'tpope/vim-sensible'
 
 filetype plugin indent on
