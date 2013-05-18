@@ -6,6 +6,7 @@ fi
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
+export EDITOR="vim"
 
 fpath=($ZSH/functions $fpath)
 
