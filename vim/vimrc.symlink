@@ -90,6 +90,7 @@ set shiftwidth=4                " autoindent is four spaces
 set softtabstop=4
 set expandtab                   " use spaces, not tabs
 set smartindent                 " autoindenting
+au BufRead,BufNewFile *.markdown setlocal textwidth=80    " wrap markdown files at 80 characters
 
 "========================================
 " Folding
