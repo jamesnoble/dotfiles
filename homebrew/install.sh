@@ -14,6 +14,6 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark
+brew install grc coreutils ack android-sdk coreutils git hub macvim vim zsh
 
 exit 0
