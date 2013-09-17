@@ -1,1 +1,4 @@
-. `brew --prefix`/etc/profile.d/z.sh
+if [[ $(uname -o) == "Darwin" ]]
+then
+    . `brew --prefix`/etc/profile.d/z.sh
+fi
