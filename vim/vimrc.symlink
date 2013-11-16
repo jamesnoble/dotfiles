@@ -133,6 +133,17 @@ if has("gui_macvim")
 	inoremap <m-3> #
 endif	
 
+"========================================
+" Functions
+"========================================
+function! WC()
+    let filename = expand("%")
+    let cmd = "detex " . filename . " | wc -w"
+    let result = system(cmd)
+    echo result
+endfunction
+
+command WC call WC()
 
 "========================================
 " Plugins
