@@ -37,6 +37,9 @@ set showbreak=↪\ \ 		" string to put before wrapped lines
 "========================================
 
 syntax enable
+autocmd InsertEnter * setlocal spell
+autocmd InsertLeave * setlocal nospell
+map <leader>ss :setlocal spell!<cr>
 
 "========================================
 " Multiple Windows
