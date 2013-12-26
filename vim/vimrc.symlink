@@ -31,6 +31,9 @@ set sidescrolloff=2		" does the same, but for the sides of the screen
 set relativenumber		" show relative line numbers
 set linebreak			" for lines longer than the window, wrap. This doesn't insert hard line breaks
 set showbreak=↪\ \ 		" string to put before wrapped lines
+" Make tabs, trailing whitespace, and non-breaking spaces visible
+exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
+set list
 
 "========================================
 " Syntax, Highlighting and Spelling
@@ -40,6 +43,10 @@ syntax enable
 autocmd InsertEnter * setlocal spell
 autocmd InsertLeave * setlocal nospell
 map <leader>ss :setlocal spell!<cr>
+
+" Highlight the 81st column of wide lines
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
 
 "========================================
 " Multiple Windows
@@ -139,6 +146,8 @@ endif
 "========================================
 " Functions
 "========================================
+
+" Word count for latex files
 function! WC()
     let filename = expand("%")
     let cmd = "detex " . filename . " | wc -w"
