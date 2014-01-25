@@ -6,7 +6,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Other bundles
-Bundle 'wincent/Command-T'
+Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/a.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/vitality.vim'
