@@ -6,7 +6,6 @@ fi
 
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
-export EDITOR='/usr/local/Cellar/macvim/7.4-70/MacVim.app/Contents/MacOS/Vim'
 
 fpath=($ZSH/functions $fpath)
 
