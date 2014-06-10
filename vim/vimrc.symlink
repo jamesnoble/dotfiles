@@ -3,18 +3,18 @@ set nocompatible
 " Vundle manages our plugins
 source $ZSH/vim/vundle.vimrc
 
-let mapleader=","		" change the leader key
+let mapleader=","       " change the leader key
 nnoremap ; :
 
 "========================================
 " Moving Around, Searching, and Patterns
 "========================================
 
-set nostartofline 		" keep the cursor in the same position for long-range motion commands
-set incsearch			" highlight pattern matches as you type
-set ignorecase			" ignore case when searching
-set smartcase			" override ignorecase when search pattern has an uppercase character
-set backspace=indent,eol,start	" backspace through everything in insert mode
+set nostartofline       " keep the cursor in the same position for long-range motion commands
+set incsearch           " highlight pattern matches as you type
+set ignorecase          " ignore case when searching
+set smartcase           " override ignorecase when search pattern has an uppercase character
+set backspace=indent,eol,start  " backspace through everything in insert mode
 " fix vim's default regex behaviour
 nnoremap / /\v
 vnoremap / /\v
@@ -26,11 +26,11 @@ nnoremap k gk
 " Displaying Text
 "========================================
 
-set scrolloff=5			" number of screen lines to show around the cursor
-set sidescrolloff=2		" does the same, but for the sides of the screen
-set relativenumber		" show relative line numbers
-set linebreak			" for lines longer than the window, wrap. This doesn't insert hard line breaks
-set showbreak=↪\ \ 		" string to put before wrapped lines
+set scrolloff=3         " number of screen lines to show around the cursor
+set sidescrolloff=2     " does the same, but for the sides of the screen
+set relativenumber      " show relative line numbers
+set linebreak           " for lines longer than the window, wrap. This doesn't insert hard line breaks
+set showbreak=↪\ \      " string to put before wrapped lines
 " Make tabs, trailing whitespace, and non-breaking spaces visible
 exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
@@ -40,9 +40,7 @@ set list
 "========================================
 
 syntax enable
-autocmd InsertEnter * setlocal spell
-autocmd InsertLeave * setlocal nospell
-map <leader>ss :setlocal spell!<cr>
+map <leader>s :setlocal spell!<cr>
 
 " Highlight the 81st column of wide lines
 highlight ColorColumn ctermbg=magenta
@@ -52,7 +50,7 @@ call matchadd('ColorColumn', '\%81v', 100)
 " Multiple Windows
 "========================================
 
-set laststatus=2		" Always show the status line
+set laststatus=2        " Always show the status line
 " Make ,w open a new vsplit then switch to it
 nnoremap <leader>w <C-w>v<C-w>l
 " " map C-[hjkl] to switch split windows
@@ -65,23 +63,21 @@ nnoremap <C-l> <C-w>l
 " Terminal
 "========================================
 
-set ttyfast			" speed things up
+set ttyfast         " speed things up
 
 "========================================
 " Messages and Info
 "========================================
 
-set showcmd			" In the status bar, show incomplete commands as they are typed
-set noshowmode			" powerline already displays this, we don't need it again
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-set ruler			" always show cursor position
-set cursorline			" highlight the line the cursor is on
+set showcmd         " In the status bar, show incomplete commands as they are typed
+set ruler           " always show cursor position
+set cursorline      " highlight the line the cursor is on
 
 "========================================
 " Selecting Text
 "========================================
 
-set clipboard=unnamed		" Yank to the system clipboard by default
+set clipboard=unnamed       " Yank to the system clipboard by default
 " preserve indentation when pasting from the osx clipboard
 noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
 
@@ -89,14 +85,14 @@ noremap <leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
 " Editing Text
 "========================================
 
-set showmatch			" show matching brackets
+set showmatch       " show matching brackets
 
 "========================================
 " Tabs and Indenting
 "========================================
 
-set tabstop=4                   " a tab is four spaces 
-set shiftwidth=4                " autoindent is four spaces 
+set tabstop=4                   " a tab is four spaces
+set shiftwidth=4                " autoindent is four spaces
 set softtabstop=4
 set expandtab                   " use spaces, not tabs
 set smartindent                 " autoindenting
@@ -107,16 +103,16 @@ autocmd Filetype ruby setlocal ts=2 sts=2 sw=2            " ruby files get an in
 " Folding
 "========================================
 
-set foldmethod=indent           " fold based on indent
-set foldnestmax=10              " deepest fold is 10 levels
-set nofoldenable                " don't fold by default
-set foldlevel=1                 " not sure exactly what this does but apparently its necessary
+set foldmethod=indent   " fold based on indent
+set foldnestmax=10      " deepest fold is 10 levels
+set nofoldenable        " don't fold by default
+set foldlevel=1         " not sure exactly what this does but apparently its necessary
 
 "========================================
 " Reading and Writing Files
 "========================================
 
-set autoread			" Automatically reread files changed outside of vim
+set autoread            " Automatically reread files changed outside of vim
 
 "========================================
 " Command Line Editing
@@ -147,22 +143,10 @@ endif
 " Functions
 "========================================
 
-" Word count for latex files
-function! WC()
-    let filename = expand("%")
-    let cmd = "detex " . filename . " | wc -w"
-    let result = system(cmd)
-    echo result
-endfunction
-
-command WC call WC()
-
 "========================================
 " Plugins
 "========================================
 
-" map ,s to switch between header and implementation files with a.vim
-map <leader>s :A<cr>
 highlight clear SignColumn
 
 " set up CtrlP

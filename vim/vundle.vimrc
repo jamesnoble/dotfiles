@@ -7,10 +7,8 @@ Bundle 'gmarik/vundle'
 
 " Other bundles
 Bundle 'kien/ctrlp.vim'
-Bundle 'vim-scripts/a.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/vitality.vim'
 Bundle 'tpope/vim-sensible'
-Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on

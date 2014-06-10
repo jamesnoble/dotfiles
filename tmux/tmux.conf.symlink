@@ -33,6 +33,3 @@ setw -g mode-mouse on
 
 # Remember more things!
 set -g history-limit 1000000
-
-# Enable Powerline
-source '/usr/local/lib/python2.7/site-packages/powerline/bindings/tmux/powerline.conf'
