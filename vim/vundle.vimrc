@@ -10,5 +10,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/vitality.vim'
 Bundle 'tpope/vim-sensible'
+Bundle 'jelera/vim-javascript-syntax'
 
 filetype plugin indent on
