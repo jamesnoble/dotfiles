@@ -11,5 +11,6 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/vitality.vim'
 Bundle 'tpope/vim-sensible'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'Rip-Rip/clang_complete'
 
 filetype plugin indent on
