@@ -46,6 +46,9 @@ map <leader>s :setlocal spell!<cr>
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
+:set t_Co=256
+:color solarized
+
 "========================================
 " Multiple Windows
 "========================================
@@ -71,7 +74,6 @@ set ttyfast         " speed things up
 
 set showcmd         " In the status bar, show incomplete commands as they are typed
 set ruler           " always show cursor position
-set cursorline      " highlight the line the cursor is on
 
 "========================================
 " Selecting Text
