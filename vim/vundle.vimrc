@@ -13,5 +13,6 @@ Bundle 'tpope/vim-sensible'
 Bundle 'jelera/vim-javascript-syntax'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
