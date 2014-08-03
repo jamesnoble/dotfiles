@@ -15,5 +15,6 @@ Bundle 'Rip-Rip/clang_complete'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/syntastic'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on
