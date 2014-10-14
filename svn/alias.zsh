@@ -1,2 +1,2 @@
-alias ss='svn status wc'
+alias ss='svn status --ignore-externals -u'
 alias su='svn update'
