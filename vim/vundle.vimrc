@@ -16,6 +16,5 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/syntastic'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tpope/vim-fugitive'
-Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin indent on
