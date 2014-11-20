@@ -44,24 +44,14 @@ echo ""
 # General UI/UX
 ###############################################################################
 
-echo ""
-echo "Setting your computer name (as done via System Preferences â†’ Sharing)"
-echo "What would you like it to be?"
-read COMPUTER_NAME
-sudo scutil --set ComputerName $COMPUTER_NAME
-sudo scutil --set HostName $COMPUTER_NAME
-sudo scutil --set LocalHostName $COMPUTER_NAME
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $COMPUTER_NAME
-
-echo ""
-echo "Hide the Spotlight icon?"
-select yn in "Yes" "No"; do
-  case $yn in
-    Yes ) sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-        break;;
-    No ) break;;
-  esac
-done
+#echo ""
+#echo "Setting your computer name (as done via System Preferences â†’ Sharing)"
+#echo "What would you like it to be?"
+#read COMPUTER_NAME
+#sudo scutil --set ComputerName $COMPUTER_NAME
+#sudo scutil --set HostName $COMPUTER_NAME
+#sudo scutil --set LocalHostName $COMPUTER_NAME
+#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $COMPUTER_NAME
 
 echo ""
 echo "Disabling OS X Gate Keeper"
@@ -160,33 +150,33 @@ echo "Requiring password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-echo ""
-echo "Where do you want screenshots to be stored? (hit ENTER if you want ~/Desktop as default)"
-read screenshot_location
-if [ -z "$1" ]
-then
-  echo ""
-  echo "Setting location to ~/Desktop"
-  defaults write com.apple.screencapture location -string "$HOME/Desktop"
-else
-  echo ""
-  echo "Setting location to ~/$screenshot_location"
-  defaults write com.apple.screencapture location -string "$HOME/$screenshot_location"
-fi
+#echo ""
+#echo "Where do you want screenshots to be stored? (hit ENTER if you want ~/Desktop as default)"
+#read screenshot_location
+#if [ -z "$1" ]
+#then
+#  echo ""
+#  echo "Setting location to ~/Desktop"
+#  defaults write com.apple.screencapture location -string "$HOME/Desktop"
+#else
+#  echo ""
+#  echo "Setting location to ~/$screenshot_location"
+#  defaults write com.apple.screencapture location -string "$HOME/$screenshot_location"
+#fi
 
-echo ""
-echo "What format should screenshots be saved as? (hit ENTER for PNG, options: BMP, GIF, JPG, PDF, TIFF) "
-read screenshot_format
-if [ -z "$1" ]
-then
-  echo ""
-  echo "Setting screenshot format to PNG"
-  defaults write com.apple.screencapture type -string "png"
-else
-  echo ""
-  echo "Setting screenshot format to $screenshot_format"
-  defaults write com.apple.screencapture type -string "$screenshot_format"
-fi
+#echo ""
+#echo "What format should screenshots be saved as? (hit ENTER for PNG, options: BMP, GIF, JPG, PDF, TIFF) "
+#read screenshot_format
+#if [ -z "$1" ]
+#then
+#  echo ""
+#  echo "Setting screenshot format to PNG"
+#  defaults write com.apple.screencapture type -string "png"
+#else
+#  echo ""
+#  echo "Setting screenshot format to $screenshot_format"
+#  defaults write com.apple.screencapture type -string "$screenshot_format"
+#fi
 
 
 echo ""
@@ -205,25 +195,25 @@ echo ""
 echo "Showing icons for hard drives, servers, and removable media on the desktop"
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 
-echo ""
-echo "Show hidden files in Finder by default?"
-select yn in "Yes" "No"; do
-  case $yn in
-    Yes ) defaults write com.apple.Finder AppleShowAllFiles -bool true
-        break;;
-    No ) break;;
-  esac
-done
-
-echo ""
-echo "Show dotfiles in Finder by default?"
-select yn in "Yes" "No"; do
-  case $yn in
-    Yes ) defaults write com.apple.finder AppleShowAllFiles TRUE
-        break;;
-    No ) break;;
-  esac
-done
+#echo ""
+#echo "Show hidden files in Finder by default?"
+#select yn in "Yes" "No"; do
+#  case $yn in
+#    Yes ) defaults write com.apple.Finder AppleShowAllFiles -bool true
+#        break;;
+#    No ) break;;
+#  esac
+#done
+#
+#echo ""
+#echo "Show dotfiles in Finder by default?"
+#select yn in "Yes" "No"; do
+#  case $yn in
+#    Yes ) defaults write com.apple.finder AppleShowAllFiles TRUE
+#        break;;
+#    No ) break;;
+#  esac
+#done
 
 echo ""
 echo "Showing all filename extensions in Finder by default"
