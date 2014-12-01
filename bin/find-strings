@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Basically a quick alias for an ag command, this will find string literals in C++ files but ignore any ending in ".h" (i.e. #include statements. It's possible that this slightly hacky way of doing this will miss some strings, but for most purposes it should be fine)
+ag "(?!(.*\.h\"|\"\[.*\]\"|\"\)))\".*\"" $1
