@@ -11,10 +11,10 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'sjl/vitality.vim'
 Bundle 'tpope/vim-sensible'
 Bundle 'jelera/vim-javascript-syntax'
-Bundle 'Rip-Rip/clang_complete'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/syntastic'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tpope/vim-fugitive'
+Bundle 'OmniSharp/omnisharp-vim'
 
 filetype plugin indent on
