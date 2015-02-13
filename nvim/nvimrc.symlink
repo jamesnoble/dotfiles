@@ -42,6 +42,9 @@ set list
 syntax enable
 map <leader>s :setlocal spell!<cr>
 
+" Format JSON files
+nmap =j :%!python -m json.tool<cr>
+
 " Highlight the 81st column of wide lines
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
