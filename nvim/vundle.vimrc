@@ -16,6 +16,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Rip-Rip/clang_complete'
+Plugin 'simnalamburt/vim-mundo'
 
 call vundle#end()
 

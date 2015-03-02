@@ -148,6 +148,9 @@ endif
 " Plugins
 "========================================
 
+" keybinding for gundo
+nnoremap <leader>g :GundoToggle<CR>
+
 highlight clear SignColumn
 
 " set up CtrlP
