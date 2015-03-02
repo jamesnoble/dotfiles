@@ -1,20 +1,22 @@
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+set rtp+=~/.nvim/bundle/Vundle.vim
+call vundle#begin('~/.nvim/bundle')
 
 " Let vundle manage itself
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Other bundles
-Bundle 'kien/ctrlp.vim'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'sjl/vitality.vim'
-Bundle 'tpope/vim-sensible'
-Bundle 'jelera/vim-javascript-syntax'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/syntastic'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Rip-Rip/clang_complete'
+Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'sjl/vitality.vim'
+Plugin 'tpope/vim-sensible'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/syntastic'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Rip-Rip/clang_complete'
+
+call vundle#end()
 
 filetype plugin indent on
