@@ -1,2 +1,0 @@
-# Sets Netflix to UK
-mv /etc/resolver/netflix.com /etc/resolver/.netflix.com
