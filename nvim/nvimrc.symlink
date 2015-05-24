@@ -11,10 +11,8 @@ nnoremap ; :
 "========================================
 
 set nostartofline       " keep the cursor in the same position for long-range motion commands
-set incsearch           " highlight pattern matches as you type
 set ignorecase          " ignore case when searching
 set smartcase           " override ignorecase when search pattern has an uppercase character
-set backspace=indent,eol,start  " backspace through everything in insert mode
 " fix vim's default regex behaviour
 nnoremap / /\v
 vnoremap / /\v
@@ -49,13 +47,10 @@ nmap =j :%!python -m json.tool<cr>
 highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
-:set t_Co=256
-
 "========================================
 " Multiple Windows
 "========================================
 
-set laststatus=2        " Always show the status line
 " Make ,w open a new vsplit then switch to it
 nnoremap <leader>w <C-w>v<C-w>l
 " " map C-[hjkl] to switch split windows
@@ -69,9 +64,6 @@ set ttyfast         " speed things up
 "========================================
 " Messages and Info
 "========================================
-
-set showcmd         " In the status bar, show incomplete commands as they are typed
-set ruler           " always show cursor position
 
 "========================================
 " Selecting Text
@@ -95,7 +87,6 @@ set tabstop=4                   " a tab is four spaces
 set shiftwidth=4                " autoindent is four spaces
 set softtabstop=4
 set expandtab                   " use spaces, not tabs
-set smartindent                 " autoindenting
 au BufRead,BufNewFile *.markdown setlocal textwidth=80    " wrap markdown files at 80 characters
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2            " ruby files get an indent size of 2
 
@@ -112,8 +103,6 @@ set foldlevel=1         " not sure exactly what this does but apparently its nec
 " Reading and Writing Files
 "========================================
 
-set autoread            " Automatically reread files changed outside of vim
-
 "========================================
 " Command Line Editing
 "========================================
@@ -122,14 +111,10 @@ set wildmode=list:longest,full
 
 " File tab completion ignores these file patterns
 set wildignore+=*.exe,*.swp,.DS_Store
-set wildmenu
 
 "========================================
 " Multi-byte Characters
 "========================================
-
-set encoding=utf-8
-
 
 "========================================
 " System-Specific
