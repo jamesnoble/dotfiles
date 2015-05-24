@@ -17,6 +17,14 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Rip-Rip/clang_complete'
 Plugin 'simnalamburt/vim-mundo'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-capslock'
+Plugin 'tpope/vim-jdaddy'
 
 call vundle#end()
 
