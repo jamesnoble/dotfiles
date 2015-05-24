@@ -3,7 +3,7 @@ set nocompatible
 " Vundle manages our plugins
 source $ZSH/nvim/vundle.vimrc
 
-let mapleader=","       " change the leader key
+let mapleader=' '       " change the leader key to space
 nnoremap ; :
 
 "========================================
