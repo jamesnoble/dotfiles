@@ -50,7 +50,6 @@ highlight ColorColumn ctermbg=magenta
 call matchadd('ColorColumn', '\%81v', 100)
 
 :set t_Co=256
-:color solarized
 
 "========================================
 " Multiple Windows
