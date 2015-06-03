@@ -6,8 +6,8 @@ set -g default-terminal "screen-256color"
 
 # Rebind prefix
 unbind C-b
-set -g prefix C-a
-bind C-a send-prefix
+set -g prefix C-Space
+bind C-Space send-prefix
 
 # Vim-style navigation
 setw -g mode-keys vi
