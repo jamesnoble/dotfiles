@@ -25,7 +25,6 @@ nnoremap k gk
 "========================================
 
 set scrolloff=3         " number of screen lines to show around the cursor
-set sidescrolloff=2     " does the same, but for the sides of the screen
 set relativenumber      " show relative line numbers
 set linebreak           " for lines longer than the window, wrap. This doesn't insert hard line breaks
 set showbreak=↪\ \      " string to put before wrapped lines
@@ -119,10 +118,6 @@ set wildignore+=*.exe,*.swp,.DS_Store
 "========================================
 " System-Specific
 "========================================
-if has("gui_macvim")
-	set macmeta
-	inoremap <m-3> #
-endif	
 
 "========================================
 " Functions
@@ -131,9 +126,6 @@ endif
 "========================================
 " Plugins
 "========================================
-
-" keybinding for gundo
-nnoremap <leader>g :GundoToggle<CR>
 
 highlight clear SignColumn
 
