@@ -2,7 +2,7 @@
 #
 
 [hub]
-        protocol = https
+        protocol = ssh
 [user]
         name = AUTHORNAME
         email = AUTHOREMAIL
@@ -21,7 +21,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+        editor = nvim
 [apply]
         whitespace = nowarn
 [mergetool]
