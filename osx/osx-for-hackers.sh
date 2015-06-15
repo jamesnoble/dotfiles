@@ -44,15 +44,6 @@ echo ""
 # General UI/UX
 ###############################################################################
 
-#echo ""
-#echo "Setting your computer name (as done via System Preferences â†’ Sharing)"
-#echo "What would you like it to be?"
-#read COMPUTER_NAME
-#sudo scutil --set ComputerName $COMPUTER_NAME
-#sudo scutil --set HostName $COMPUTER_NAME
-#sudo scutil --set LocalHostName $COMPUTER_NAME
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $COMPUTER_NAME
-
 echo ""
 echo "Disabling OS X Gate Keeper"
 echo "(You'll be able to install any app you want from here on, not just Mac App Store apps)"
@@ -150,35 +141,6 @@ echo "Requiring password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-#echo ""
-#echo "Where do you want screenshots to be stored? (hit ENTER if you want ~/Desktop as default)"
-#read screenshot_location
-#if [ -z "$1" ]
-#then
-#  echo ""
-#  echo "Setting location to ~/Desktop"
-#  defaults write com.apple.screencapture location -string "$HOME/Desktop"
-#else
-#  echo ""
-#  echo "Setting location to ~/$screenshot_location"
-#  defaults write com.apple.screencapture location -string "$HOME/$screenshot_location"
-#fi
-
-#echo ""
-#echo "What format should screenshots be saved as? (hit ENTER for PNG, options: BMP, GIF, JPG, PDF, TIFF) "
-#read screenshot_format
-#if [ -z "$1" ]
-#then
-#  echo ""
-#  echo "Setting screenshot format to PNG"
-#  defaults write com.apple.screencapture type -string "png"
-#else
-#  echo ""
-#  echo "Setting screenshot format to $screenshot_format"
-#  defaults write com.apple.screencapture type -string "$screenshot_format"
-#fi
-
-
 echo ""
 echo "Enabling subpixel font rendering on non-Apple LCDs"
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
@@ -194,26 +156,6 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 echo ""
 echo "Showing icons for hard drives, servers, and removable media on the desktop"
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
-
-#echo ""
-#echo "Show hidden files in Finder by default?"
-#select yn in "Yes" "No"; do
-#  case $yn in
-#    Yes ) defaults write com.apple.Finder AppleShowAllFiles -bool true
-#        break;;
-#    No ) break;;
-#  esac
-#done
-#
-#echo ""
-#echo "Show dotfiles in Finder by default?"
-#select yn in "Yes" "No"; do
-#  case $yn in
-#    Yes ) defaults write com.apple.finder AppleShowAllFiles TRUE
-#        break;;
-#    No ) break;;
-#  esac
-#done
 
 echo ""
 echo "Showing all filename extensions in Finder by default"
@@ -259,11 +201,6 @@ echo "Enabling snap-to-grid for icons on the desktop and in other icon views"
 ###############################################################################
 # Dock & Mission Control
 ###############################################################################
-
-# Wipe all (default) app icons from the Dock
-# This is only really useful when setting up a new Mac, or if you don't use
-# the Dock to launch apps.
-#defaults write com.apple.dock persistent-apps -array
 
 echo ""
 echo "Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
@@ -328,18 +265,6 @@ echo ""
 echo "Setting email addresses to copy as 'foo@example.com' instead of 'Foo Bar <foo@example.com>' in Mail.app"
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
-
-###############################################################################
-# Terminal
-###############################################################################
-
-echo ""
-echo "Enabling UTF-8 ONLY in Terminal.app and setting the Pro theme by default"
-defaults write com.apple.terminal StringEncodings -array 4
-defaults write com.apple.Terminal "Default Window Settings" -string "Pro"
-defaults write com.apple.Terminal "Startup Window Settings" -string "Pro"
-
-
 ###############################################################################
 # Time Machine
 ###############################################################################
@@ -358,43 +283,12 @@ hash tmutil &> /dev/null && sudo tmutil disablelocal
 ###############################################################################
 
 echo ""
-echo "Disable automatic emoji substitution (i.e. use plain text smileys)"
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
-
-echo ""
 echo "Disable smart quotes as it's annoying for messages that contain code"
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
 echo ""
 echo "Disable continuous spell checking"
 defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "continuousSpellCheckingEnabled" -bool false
-
-
-###############################################################################
-# Transmission.app                                                            #
-###############################################################################
-
-echo ""
-echo "Use `~/Downloads/Incomplete` to store incomplete downloads"
-defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads/Incomplete"
-
-echo ""
-echo "Don't prompt for confirmation before downloading"
-defaults write org.m0k.transmission DownloadAsk -bool false
-
-echo ""
-echo "Trash original torrent files"
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-echo ""
-echo "Hide the donate message"
-defaults write org.m0k.transmission WarningDonate -bool false
-
-echo ""
-echo "Hide the legal disclaimer"
-defaults write org.m0k.transmission WarningLegal -bool false
-
 
 ###############################################################################
 # Personal Additions
