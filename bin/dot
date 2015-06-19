@@ -13,4 +13,4 @@ brew update
 $ZSH/homebrew/install.sh 2>&1
 
 # Update vim plugins
-vim +PluginUpdate +qall
+nvim +PluginInstall +qall
