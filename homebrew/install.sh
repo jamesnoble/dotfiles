@@ -13,7 +13,7 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils git hub macvim zsh tmux reattach-to-user-namespace gcc irssi the_silver_searcher z colordiff
+brew install grc coreutils git hub zsh tmux reattach-to-user-namespace gcc irssi the_silver_searcher z colordiff
 
 # Upgrade existing homebrew packages
 brew upgrade
