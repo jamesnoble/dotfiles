@@ -1,8 +1,6 @@
 # Sample gitconfig
 #
 
-[hub]
-        protocol = ssh
 [user]
         name = AUTHORNAME
         email = AUTHOREMAIL
