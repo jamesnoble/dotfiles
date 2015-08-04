@@ -1,5 +1,5 @@
 alias ss='svn status --ignore-externals -u'
 alias su='svn update'
-alias sl='svn log -v | less'
+alias sl='svn log --limit 10 | svn_short_log'
 alias sc='svn commit'
 alias sd='svn diff --diff-cmd colordiff'
