@@ -1,1 +1,1 @@
-alias reload!='. ~/.zshrc'
+alias rl='. ~/.zshrc'
