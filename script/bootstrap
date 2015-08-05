@@ -144,7 +144,7 @@ install_dotfiles
 if [ "$(uname -s)" == "Darwin" ]
 then
   info "setting osx defaults"
-  $HOME/.dotfiles/osx/osx-for-hackers.sh
+  $HOME/.dotfiles/osx/osx-defaults.sh
   info "installing dependencies"
   if source bin/dot > /tmp/dotfiles-dot 2>&1
   then
