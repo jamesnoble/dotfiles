@@ -22,8 +22,23 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils git hub zsh tmux reattach-to-user-namespace gcc the_silver_searcher colordiff
+brew install android-ndk
+brew install apktool
+brew install ccache
+brew install colordiff
+brew install coreutils
+brew install git
+brew install gradle
+brew install grc
+brew install hub
+brew install imagemagick
 brew install --HEAD neovim/neovim/neovim
+brew install qt
+brew install qt5
+brew install reattach-to-user-namespace
+brew install the_silver_searcher
+brew install tmux
+brew install zsh
 
 # Upgrade existing homebrew packages
 brew upgrade
