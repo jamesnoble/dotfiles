@@ -143,8 +143,6 @@ install_dotfiles
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
 then
-  info "setting osx defaults"
-  $HOME/.dotfiles/osx/osx-defaults.sh
   info "installing dependencies"
   if source bin/dot > /tmp/dotfiles-dot 2>&1
   then
