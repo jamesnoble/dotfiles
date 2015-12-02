@@ -18,11 +18,11 @@ then
   then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/linuxbrew/go/install)"
   fi
-  
+
 fi
 
 # Install homebrew packages
-brew install grc coreutils git hub zsh tmux reattach-to-user-namespace gcc the_silver_searcher z colordiff
+brew install grc coreutils git hub zsh tmux reattach-to-user-namespace gcc the_silver_searcher colordiff
 brew install --HEAD neovim/neovim/neovim
 
 # Upgrade existing homebrew packages
