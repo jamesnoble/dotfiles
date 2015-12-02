@@ -1,0 +1,26 @@
+"*":
+  "exception-reporting":
+    userId: "da976a4b-6a5d-3f34-7d9b-6bfdb74474ed"
+  welcome:
+    showOnStartup: false
+  "one-dark-ui": {}
+  core:
+    themes: [
+      "native-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+    disabledPackages: [
+      "ex-mode"
+      "vim-mode"
+    ]
+  editor:
+    invisibles: {}
+    tabLength: 4
+    fontSize: 12
+  "vim-mode": {}
+  linter: {}
+  "linter-clang":
+    execPath: "/usr/bin/clang"
+    verboseDebug: true
+  "linter-pylint":
+    executable: "/usr/local/bin/pylint"
