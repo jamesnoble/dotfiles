@@ -10,5 +10,8 @@ export ZSH=$HOME/.dotfiles
 brew update
 brew upgrade
 
+# upgrade atom packages
+apm upgrade
+
 # Update vim plugins
 nvim +PluginInstall +qall
