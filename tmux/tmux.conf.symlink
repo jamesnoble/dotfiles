@@ -24,10 +24,7 @@ bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 set -g base-index 1
 
 # Enable the mouse
-set-option -g mouse on
-
-# scroll into copy mode and select text for copying with the mouse
-setw -g mode-mouse on
+setw -g mouse on
 
 # Remember more things!
 set -g history-limit 1000000
