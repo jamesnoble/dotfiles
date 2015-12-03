@@ -10,8 +10,6 @@
       "base16-tomorrow-dark-theme"
     ]
     disabledPackages: [
-      "ex-mode"
-      "vim-mode"
     ]
   editor:
     invisibles: {}
@@ -24,3 +22,5 @@
     verboseDebug: true
   "linter-pylint":
     executable: "/usr/local/bin/pylint"
+  "git-diff":
+    showIconsInEditorGutter: true
