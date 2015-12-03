@@ -27,8 +27,12 @@ bind -n C-k if-shell "$is_vim" "send-keys C-k" "select-pane -U"
 bind -n C-l if-shell "$is_vim" "send-keys C-l" "select-pane -R"
 bind -n C-\ if-shell "$is_vim" "send-keys C-\\" "select-pane -l"
 
+# Renumber windows when one is destroyed, keeping them from 1-n
+set -g renumber-windows on
+
 # 0 is at the wrong end of the keyboard
 set -g base-index 1
+set -g pane-base-index 1
 
 # Enable the mouse
 setw -g mouse on
