@@ -6,11 +6,10 @@
   "one-dark-ui": {}
   core:
     themes: [
-      "native-ui"
+      "seti-ui"
       "base16-tomorrow-dark-theme"
     ]
-    disabledPackages: [
-    ]
+    disabledPackages: []
   editor:
     invisibles: {}
     tabLength: 4
