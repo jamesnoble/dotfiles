@@ -16,6 +16,7 @@ cask 'karabiner'
 cask 'omnifocus'
 cask 'qt-creator'
 cask 'seil'
+cask 'slack'
 cask 'spectacle'
 
 brew 'android-ndk'
