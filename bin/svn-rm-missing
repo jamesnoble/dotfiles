@@ -1,0 +1,2 @@
+# Remove all missing files in svn
+svn status --ignore-externals | grep "\!" | cut -d! -f2 | xargs svn rm
