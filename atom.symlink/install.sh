@@ -4,3 +4,4 @@ apm install linter-pylint
 apm install seti-ui
 apm install minimap
 apm install git-plus
+apm install linter-jshint
