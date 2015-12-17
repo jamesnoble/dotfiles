@@ -13,7 +13,7 @@
   editor:
     invisibles: {}
     tabLength: 4
-    fontSize: 12
+    fontSize: 13
   "vim-mode": {}
   linter: {}
   "linter-clang":
