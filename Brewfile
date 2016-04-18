@@ -1,5 +1,4 @@
 cask_args appdir: '/Applications'
-tap 'caskroom/cask'
 
 cask '1password'
 cask 'alfred'
