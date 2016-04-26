@@ -10,7 +10,6 @@
   editor:
     fontSize: 13
     invisibles: {}
-    tabLength: 4
   "exception-reporting":
     userId: "da976a4b-6a5d-3f34-7d9b-6bfdb74474ed"
   "git-diff":
@@ -26,3 +25,5 @@
   "vim-mode": {}
   welcome:
     showOnStartup: false
+  whitespace:
+    removeTrailingWhitespace: false
