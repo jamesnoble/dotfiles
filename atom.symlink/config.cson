@@ -22,6 +22,9 @@
   "linter-pylint":
     executable: "/usr/local/bin/pylint"
   "one-dark-ui": {}
+  "seti-ui":
+    compactView: true
+    themeColor: "Steel"
   "vim-mode": {}
   welcome:
     showOnStartup: false
