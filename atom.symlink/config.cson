@@ -4,7 +4,7 @@
       "linter-pylint"
     ]
     themes: [
-      "seti-ui"
+      "nucleus-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
   editor:
