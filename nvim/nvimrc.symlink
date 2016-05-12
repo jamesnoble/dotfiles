@@ -29,14 +29,12 @@ set relativenumber      " show relative line numbers
 set linebreak           " for lines longer than the window, wrap. This doesn't insert hard line breaks
 set showbreak=↪\ \      " string to put before wrapped lines
 " Make tabs, trailing whitespace, and non-breaking spaces visible
-exec "set listchars=tab:\uBB\uBB,trail:\uB7,nbsp:~"
 set list
 
 "========================================
 " Syntax, Highlighting and Spelling
 "========================================
 
-syntax enable
 map <leader>s :setlocal spell!<cr>
 
 " Format JSON files
