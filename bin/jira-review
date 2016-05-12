@@ -1,1 +1,0 @@
-jira ls -q 'status in (Open, "In Progress", Reopened, "In Review") AND updated >= -24h AND assignee in (currentUser())'
