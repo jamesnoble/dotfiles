@@ -9,3 +9,5 @@ atom.symlink/themes
 atom.symlink/blob-store
 nvim/nvim.symlink
 git/gitconfig.local.symlink
+prompt/async
+prompt/prompt_pure_setup
