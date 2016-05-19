@@ -39,3 +39,6 @@ do
 done
 
 unset config_files
+
+# syntax higlighting is a special snowflake
+source $ZSH/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
