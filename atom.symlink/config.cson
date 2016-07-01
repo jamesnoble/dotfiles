@@ -21,6 +21,10 @@
     verboseDebug: true
   "linter-pylint":
     executable: "/usr/local/bin/pylint"
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   "one-dark-ui": {}
   "seti-ui":
     compactView: true
