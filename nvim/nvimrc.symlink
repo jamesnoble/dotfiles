@@ -13,9 +13,6 @@ nnoremap ; :
 set nostartofline       " keep the cursor in the same position for long-range motion commands
 set ignorecase          " ignore case when searching
 set smartcase           " override ignorecase when search pattern has an uppercase character
-" fix vim's default regex behaviour
-nnoremap / /\v
-vnoremap / /\v
 " make j and k navigate up and down by line-on-screen rather than line-in-file
 nnoremap j gj
 nnoremap k gk
@@ -35,8 +32,6 @@ set list
 " Syntax, Highlighting and Spelling
 "========================================
 
-map <leader>s :setlocal spell!<cr>
-
 " Format JSON files
 nmap =j :%!python -m json.tool<cr>
 
@@ -53,10 +48,6 @@ nnoremap <leader>w <C-w>v<C-w>l
 "========================================
 
 set ttyfast         " speed things up
-
-"========================================
-" Messages and Info
-"========================================
 
 "========================================
 " Selecting Text
@@ -93,10 +84,6 @@ set nofoldenable        " don't fold by default
 set foldlevel=1         " not sure exactly what this does but apparently its necessary
 
 "========================================
-" Reading and Writing Files
-"========================================
-
-"========================================
 " Command Line Editing
 "========================================
 
@@ -104,18 +91,6 @@ set wildmode=list:longest,full
 
 " File tab completion ignores these file patterns
 set wildignore+=*.exe,*.swp,.DS_Store
-
-"========================================
-" Multi-byte Characters
-"========================================
-
-"========================================
-" System-Specific
-"========================================
-
-"========================================
-" Functions
-"========================================
 
 "========================================
 " Plugins
@@ -129,8 +104,3 @@ let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 map <leader>t :CtrlP<cr>
-
-let s:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
-if isdirectory(s:clang_library_path)
-    let g:clang_library_path=s:clang_library_path
-endif
