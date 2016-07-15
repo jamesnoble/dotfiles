@@ -14,4 +14,4 @@ brew upgrade
 apm upgrade
 
 # Update vim plugins
-nvim +PluginInstall +qall
+vim +PluginInstall +qall

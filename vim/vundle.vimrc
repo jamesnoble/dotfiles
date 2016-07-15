@@ -1,6 +1,6 @@
 filetype off
-set rtp+=~/.nvim/bundle/Vundle.vim
-call vundle#begin('~/.nvim/bundle')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin('~/.vim/bundle')
 
 " Let vundle manage itself
 Plugin 'gmarik/Vundle.vim'

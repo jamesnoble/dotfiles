@@ -1,1 +1,1 @@
-export SVN_EDITOR='nvim'
+export SVN_EDITOR='vim'
