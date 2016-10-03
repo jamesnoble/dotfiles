@@ -1,0 +1,28 @@
+[2016-10-03 19:46:37.010] [console_user_server] [info] version 0.90.46
+[2016-10-03 19:46:38.106] [console_user_server] [info] grabber_client_ is connected
+[2016-10-03 19:46:38.108] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:46:39.163] [console_user_server] [info] system_preferences::values is updated.
+[2016-10-03 19:48:32.760] [console_user_server] [info] version 0.90.46
+[2016-10-03 19:48:33.847] [console_user_server] [info] grabber_client_ is connected
+[2016-10-03 19:48:33.849] [console_user_server] [warning] parse error in /Users/james/.karabiner.d/configuration/karabiner.json: parse error - unexpected '"'
+[2016-10-03 19:48:33.849] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:48:34.906] [console_user_server] [info] system_preferences::values is updated.
+[2016-10-03 19:49:35.971] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:49:36.121] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:49:36.289] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:49:48.628] [console_user_server] [info] version 0.90.46
+[2016-10-03 19:49:49.729] [console_user_server] [info] grabber_client_ is connected
+[2016-10-03 19:49:49.730] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:49:50.801] [console_user_server] [info] system_preferences::values is updated.
+[2016-10-03 19:51:03.137] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:58:56.979] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:58:58.474] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:58:58.625] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:58:58.779] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:58:58.930] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:59:17.580] [console_user_server] [info] version 0.90.46
+[2016-10-03 19:59:18.672] [console_user_server] [info] grabber_client_ is connected
+[2016-10-03 19:59:18.674] [console_user_server] [info] configuration_core_ was loaded.
+[2016-10-03 19:59:19.742] [console_user_server] [info] system_preferences::values is updated.
+[2016-10-03 19:59:45.074] [console_user_server] [info] the configuration directory is updated.
+[2016-10-03 19:59:48.159] [console_user_server] [info] the configuration directory is updated.
