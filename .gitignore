@@ -7,7 +7,7 @@ atom.symlink/packages
 atom.symlink/storage
 atom.symlink/themes
 atom.symlink/blob-store
-nvim/nvim.symlink
+vim/vim.symlink
 git/gitconfig.local.symlink
 prompt/async
 prompt/prompt_pure_setup
