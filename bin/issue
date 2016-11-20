@@ -1,5 +1,0 @@
-#!/bin/sh
-# Open the specified issue in jira
-PROJECT="NMTHREE"
-
-jira view -b "${PROJECT}-$1"
