@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/james.noble/code/Match3Candy/Code/branches/Update_1_6/Project/Amazon/CandyWitchAmazon/build'
-let g:netrw_dirhist_2='/Users/james.noble/code/Match3Candy/Code/branches/Update_1_6/Project/GooglePlay/CandyWitchGooglePlay/provisioning'
-let g:netrw_dirhist_3='/Users/james.noble/code/Match3Candy/Code/branches/Update_1_11'
-let g:netrw_dirhist_4='/Users/james.noble/.dotfiles/zsh'
