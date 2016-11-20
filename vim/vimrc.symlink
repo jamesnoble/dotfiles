@@ -91,16 +91,3 @@ set wildmode=list:longest,full
 
 " File tab completion ignores these file patterns
 set wildignore+=*.exe,*.swp,.DS_Store
-
-"========================================
-" Plugins
-"========================================
-
-highlight clear SignColumn
-
-" set up CtrlP
-let g:ctrlp_match_window = 'bottom,order:ttb'
-let g:ctrlp_switch_buffer = 0
-let g:ctrlp_working_path_mode = 0
-let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
-map <leader>t :CtrlP<cr>
