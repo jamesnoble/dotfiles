@@ -3,6 +3,7 @@
     disabledPackages: [
       "linter-pylint"
     ]
+    telemetryConsent: "limited"
     themes: [
       "nucleus-dark-ui"
       "base16-tomorrow-dark-theme"
