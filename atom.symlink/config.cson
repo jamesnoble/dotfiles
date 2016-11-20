@@ -1,8 +1,5 @@
 "*":
   core:
-    disabledPackages: [
-      "linter-pylint"
-    ]
     telemetryConsent: "limited"
     themes: [
       "nucleus-dark-ui"
