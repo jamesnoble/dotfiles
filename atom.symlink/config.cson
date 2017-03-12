@@ -2,33 +2,24 @@
   core:
     telemetryConsent: "limited"
     themes: [
-      "nucleus-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "one-light-ui"
+      "base16-tomorrow-light-theme"
     ]
   editor:
     fontSize: 13
     invisibles: {}
+    tabLength: 2
   "exception-reporting":
     userId: "da976a4b-6a5d-3f34-7d9b-6bfdb74474ed"
   "git-diff":
     showIconsInEditorGutter: true
-  "git-plus": {}
   linter: {}
   "linter-clang":
     execPath: "/usr/bin/clang"
     verboseDebug: true
   "linter-pylint":
     executable: "/usr/local/bin/pylint"
-  minimap:
-    plugins:
-      "highlight-selected": true
-      "highlight-selectedDecorationsZIndex": 0
-  "one-dark-ui": {}
-  "seti-ui":
-    compactView: true
-    themeColor: "Steel"
-  "vim-mode": {}
   welcome:
     showOnStartup: false
   whitespace:
-    removeTrailingWhitespace: false
+    removeTrailingWhitespace: true
