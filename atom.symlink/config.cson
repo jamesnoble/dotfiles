@@ -18,7 +18,7 @@
     execPath: "/usr/bin/clang"
     verboseDebug: true
   "linter-pylint":
-    executable: "/usr/local/bin/pylint"
+    executablePath: "/usr/local/bin/pylint"
   welcome:
     showOnStartup: false
   whitespace:
