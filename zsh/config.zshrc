@@ -28,3 +28,4 @@ setopt HIST_REDUCE_BLANKS
 setopt complete_aliases
 
 bindkey -v
+bindkey "^R" history-incremental-search-backward # restore ctrl-r binding for history search
