@@ -91,3 +91,9 @@ set wildmode=list:longest,full
 
 " File tab completion ignores these file patterns
 set wildignore+=*.exe,*.swp,.DS_Store
+
+"========================================
+" Plugins
+"========================================
+
+let g:ctrlp_map = '<leader>t'
