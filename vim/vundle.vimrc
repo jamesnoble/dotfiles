@@ -6,6 +6,7 @@ call vundle#begin('~/.vim/bundle')
 Plugin 'gmarik/Vundle.vim'
 
 " Other bundles
+Plugin 'chriskempson/base16-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-sensible'
 
