@@ -2,8 +2,8 @@
   core:
     telemetryConsent: "limited"
     themes: [
-      "one-light-ui"
-      "base16-tomorrow-light-theme"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     fontSize: 13
