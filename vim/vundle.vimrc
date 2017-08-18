@@ -9,6 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-sensible'
+Plugin 'elzr/vim-json'
 
 call vundle#end()
 
