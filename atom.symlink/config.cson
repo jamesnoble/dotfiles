@@ -1,5 +1,8 @@
 "*":
   core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
