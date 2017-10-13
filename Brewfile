@@ -1,7 +1,2 @@
-brew 'coreutils'
-brew 'git'
-brew 'grc'
-brew 'python3'
 brew 'the_silver_searcher'
-brew 'unrar'
 brew 'zsh'
