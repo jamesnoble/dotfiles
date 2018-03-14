@@ -7,8 +7,12 @@
 export ZSH=$HOME/.dotfiles
 
 # Upgrade homebrew
-brew update
-brew upgrade
+
+if test $(which brew)
+then
+    brew update
+    brew upgrade
+fi
 
 # Update vim plugins
 vim +PluginInstall +qall
