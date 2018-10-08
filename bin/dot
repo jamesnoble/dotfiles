@@ -14,5 +14,11 @@ then
     brew upgrade
 fi
 
+if test $(which apt-get)
+then
+    sudo apt-get update
+    sudo apt-get upgrade
+fi
+
 # Update vim plugins
 vim +PluginInstall +qall
