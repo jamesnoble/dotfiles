@@ -97,3 +97,4 @@ set wildignore+=*.exe,*.swp,.DS_Store
 "========================================
 
 let g:ctrlp_map = '<leader>t'
+map <leader>n :NERDTreeToggle<CR>
