@@ -1,0 +1,1 @@
+svn log -r {`date -v+1d "+%Y-%m-%d"`}:{`date -v-1d "+%Y-%m-%d"`} | svn-short-log
