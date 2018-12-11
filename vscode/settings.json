@@ -4,5 +4,11 @@
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "editor.renderIndentGuides": false,
-    "python.linting.pep8Enabled": true
+    "python.linting.pep8Enabled": true,
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "python.pythonPath": "/usr/local/bin/python",
+    "terminal.integrated.rendererType": "dom",
+    "editor.minimap.enabled": false
 }
