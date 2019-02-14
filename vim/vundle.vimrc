@@ -15,6 +15,7 @@ Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 
