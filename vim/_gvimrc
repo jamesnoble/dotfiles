@@ -1,0 +1,4 @@
+set ruler
+set guioptions-=T
+set guifont=Consolas:h10:cANSI
+colorscheme base16-default-dark
