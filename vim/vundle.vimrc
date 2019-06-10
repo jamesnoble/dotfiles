@@ -7,7 +7,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Other bundles
 Plugin 'chriskempson/base16-vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'elzr/vim-json'
 Plugin 'scrooloose/nerdtree'
