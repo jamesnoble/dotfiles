@@ -6,9 +6,9 @@ then
   then
     echo "  Installing Homebrew for you."
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew bundle
+
   fi
 fi
-
-brew bundle
 
 exit 0
