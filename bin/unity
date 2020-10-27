@@ -1,0 +1,2 @@
+UNITY_VER=2020.1.0f1
+/Applications/Unity/Hub/Editor/$UNITY_VER/Unity.app/Contents/MacOS/Unity -projectPath $1 &
