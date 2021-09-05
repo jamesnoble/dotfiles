@@ -17,6 +17,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'davidoc/taskpaper.vim'
+Plugin 'puremourning/vimspector'
 
 call vundle#end()
 
