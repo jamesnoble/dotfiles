@@ -20,6 +20,7 @@ set smartcase           " override ignorecase when search pattern has an upperca
 " make j and k navigate up and down by line-on-screen rather than line-in-file
 nnoremap j gj
 nnoremap k gk
+set mouse=a
 
 "========================================
 " Displaying Text
