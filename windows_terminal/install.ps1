@@ -1,0 +1,1 @@
+New-Item -Force -Path $Env:localappdata\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json -ItemType SymbolicLink -Value $Env:userprofile\dotfiles\windows_terminal\settings.json
