@@ -1,5 +1,7 @@
 function prompt()
 {
+    $host.ui.RawUI.WindowTitle = $pwd
+
     Write-Host ""
     Write-Host "$pwd" -ForegroundColor DarkBlue
     Write-Host ">" -ForegroundColor DarkMagenta -NoNewline
