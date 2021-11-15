@@ -3,10 +3,12 @@ function prompt()
     $host.ui.RawUI.WindowTitle = $pwd
 
     $svn_branch = get_svn_branch
+    $git_branch = get_git_branch
+    $git_status = get_git_status
 
     Write-Host ""
     Write-Host "$pwd" -ForegroundColor DarkBlue -NoNewline
-    Write-Host " $svn_branch" -ForegroundColor DarkGray
+    Write-Host " $svn_branch$git_branch$git_status" -ForegroundColor DarkGray
     Write-Host "❯" -ForegroundColor DarkMagenta -NoNewline
     return " "
 }
@@ -54,6 +56,26 @@ function get_svn_status() # leaving for posterity but svn st is too slow for act
     return "*"
 }
 
+function get_git_branch()
+{
+    if(!(exists git)){ return "" }
+
+    $output = git branch --show-current
+    if($null -eq $output) { return "" }
+
+    return $output
+}
+
+function get_git_status()
+{
+    if(!(exists git)){ return "" }
+
+    $output = git status -s
+    if($null -eq $output) { return "" }
+
+    return "*"
+    
+}
 
 $dotfiles = "$home\dotfiles"
 
