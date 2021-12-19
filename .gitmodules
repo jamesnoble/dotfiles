@@ -1,3 +1,0 @@
-[submodule "prompt/pure"]
-	path = prompt/pure
-	url = https://www.github.com/sindresorhus/pure.git
