@@ -83,3 +83,7 @@ foreach($item in Get-ChildItem $dotfiles -Recurse -Filter "aliases.ps1")
 {
     . $item
 }
+foreach($item in Get-ChildItem $dotfiles -Recurse -Filter "path.ps1")
+{
+    . $item
+}

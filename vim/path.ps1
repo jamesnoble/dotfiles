@@ -1,0 +1,1 @@
+$env:Path += ';C:\Program Files\Vim\vim91'
