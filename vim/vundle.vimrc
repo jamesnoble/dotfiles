@@ -1,6 +1,11 @@
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin('~/.vim/bundle')
+if has("win32")
+    set rtp+=~/vimfiles/bundle/Vundle.vim
+    call vundle#begin('~/vimfiles/bundle')
+else
+    set rtp+=~/.vim/bundle/Vundle.vim
+    call vundle#begin('~/.vim/bundle')
+endif
 
 " Let vundle manage itself
 Plugin 'gmarik/Vundle.vim'

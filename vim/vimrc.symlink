@@ -2,6 +2,7 @@ set nocompatible
 
 " Vundle manages our plugins
 if has("win32")
+    set shellslash
     source ~/dotfiles/vim/vundle.vimrc
 else
     source ~/.dotfiles/vim/vundle.vimrc
