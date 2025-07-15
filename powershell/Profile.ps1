@@ -15,7 +15,7 @@ function prompt()
 
 function exists($command)
 {
-    return Get-Command $command -errorAction SilentlyContinue
+    return Get-Command $command -errorAction Ignore
 }
 
 function get_svn_branch()
