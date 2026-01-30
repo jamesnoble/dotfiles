@@ -13,8 +13,8 @@ precmd()
 
 
 NEWLINE=$'\n'
-PROMPT_L1=%F{blue}'%~'
-PROMPT_L2="%F{magenta}❯ %F"
-PROMPT_VCS_INFO='%F{cyan}${vcs_info_msg_0_}%F'
+PROMPT_L1="%F{blue}%~%F{default}"
+PROMPT_L2="%F{magenta}❯ %F{default}"
+PROMPT_VCS_INFO="%F{cyan}${vcs_info_msg_0_}%F{default}"
 
 PROMPT="$NEWLINE$PROMPT_L1 $PROMPT_VCS_INFO$NEWLINE$PROMPT_L2"
