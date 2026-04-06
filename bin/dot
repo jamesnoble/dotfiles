@@ -6,8 +6,6 @@
 # to make sure you're on the latest and greatest.
 export ZSH=$HOME/.dotfiles
 
-# Upgrade homebrew
-
 if test $(which brew)
 then
     brew update
@@ -18,6 +16,11 @@ if test $(which apt-get)
 then
     sudo apt-get update
     sudo apt-get upgrade
+fi
+
+if test $(which dnf)
+then
+    sudo dnf update -y
 fi
 
 # Update vim plugins
