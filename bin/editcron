@@ -1,3 +1,0 @@
-export EDITOR=vi
-crontab -e
-export EDITOR=vim
